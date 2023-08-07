@@ -1,56 +1,56 @@
 /* work sans font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Work Sans', sans-serif;
 }
 
-body{
+body {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 /* common styles */
-.text-pink{
+.text-pink {
   color: #FF42A5;
 }
 
-/* navbar styles */
+/* navbar styles starts */
 
-nav{
+nav {
   margin: 40px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-title{
+.nav-title {
   font-weight: 700;
   font-size: 45px;
 }
 
-.icon-and-text{
+.icon-and-text {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.icon-and-text img{
+.icon-and-text img {
   width: 80px;
   height: 40px;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
   display: flex;
   align-items: center;
   gap: 32px;
 }
 
-nav ul a{
+nav ul a {
   text-decoration: none;
   color: #3C354F;
   font-weight: 500;
@@ -58,7 +58,7 @@ nav ul a{
   align-items: center;
 }
 
-nav ul input[type="text"]{
+nav ul input[type="text"] {
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.10);
   padding: 20px;
@@ -69,28 +69,73 @@ nav ul input[type="text"]{
   height: 56px;
 }
 
-nav ul input[type="text"]:focus{
+nav ul input[type="text"]:focus {
   border: 0;
 }
 
-.input-search-field{
+.input-search-field {
   position: relative;
 }
 
-.fa-youtube,.fa-tiktok{
+.fa-youtube,
+.fa-tiktok {
   position: absolute;
   top: 30px;
   cursor: pointer;
 }
 
-.fa-youtube{
+.fa-youtube {
   right: 40px;
   color: red;
   margin-right: 10px;
 }
 
-.fa-tiktok{
+.fa-tiktok {
   right: 10px;
+}
+
+/* navbar ends */
+
+
+/* banner starts */
+
+.banner {
+  margin: 0 100px;
+  display: flex;
+  align-items: center;
+  background: #FFF;
+}
+
+.banner-description {
+  width: 50%;
+}
+
+.banner img {
+  width: 50%;
+}
+
+.banner-description h2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.banner-title {
+  font-weight: 800;
+  font-size: 95px;
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+
+  /* Clip the background upto
+                the text  */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Set the color of the text
+                to transparent  */
+  color: transparent;
+  margin-bottom: 24px;
+}
+
+.banner-description p{
+  margin-bottom: 17px;
 }
 
 
@@ -104,32 +149,33 @@ nav ul input[type="text"]:focus{
 
 /* responsive */
 /* for mobile */
-@media screen and (width<=576px){
-  nav{
+@media screen and (width<=576px) {
+  nav {
     margin: 20px 100px;
   }
 
-  nav,nav ul{
+  nav,
+  nav ul {
     flex-direction: column;
   }
 
-  .icon-and-text{
+  .icon-and-text {
     margin-bottom: 25px;
   }
 }
 
 /* responsive tablet */
-@media screen and (577px <=width <=960px){
-  nav{
+@media screen and (577px <=width <=960px) {
+  nav {
     margin: 20px 100px;
   }
 
-  nav,nav ul{
+  nav,
+  nav ul {
     flex-direction: column;
   }
 
-  .icon-and-text{
+  .icon-and-text {
     margin-bottom: 25px;
   }
 }
-

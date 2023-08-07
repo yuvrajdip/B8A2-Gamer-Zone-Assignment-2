@@ -187,10 +187,36 @@ nav ul input[type="text"]:focus {
   margin-bottom: 20px;
 }
 
+.online-games-description{
+  margin-bottom: 24px;
+}
 
+.online-games-img-container{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
 
+.online-games-img-container .img-box{
+  width: 100%;
+}
 
+.online-games-img-container .img-box img{
+  width: 100%;
+}
 
+/* .img-box img{
+  width: 250px;
+  height: 300px;
+}
+
+.img-box p{
+  padding: 5%;
+}
+
+.img-box{
+  height: 450px;
+} */
 
 
 /* responsive */

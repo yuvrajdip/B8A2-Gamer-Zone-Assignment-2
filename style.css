@@ -9,7 +9,7 @@
 }
 
 body {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -93,14 +93,14 @@ nav ul input[type="text"]:focus {
 .fa-tiktok {
   right: 10px;
 }
-
 /* navbar ends */
 
 
 /* banner starts */
 
 .banner {
-  margin: 0 100px;
+  margin: 50px 100px;
+  text-align: center;
   display: flex;
   align-items: center;
   background: #FFF;
@@ -137,7 +137,7 @@ nav ul input[type="text"]:focus {
 .banner-description p{
   margin-bottom: 17px;
 }
-
+/* banner ends */
 
 
 
@@ -150,32 +150,70 @@ nav ul input[type="text"]:focus {
 /* responsive */
 /* for mobile */
 @media screen and (width<=576px) {
+  
+  /* nav styles */
   nav {
     margin: 20px 100px;
   }
-
+  
   nav,
-  nav ul {
+  nav ul , .banner{
     flex-direction: column;
   }
 
   .icon-and-text {
     margin-bottom: 25px;
+  }
+
+  nav ul input[type="text"] {
+    padding: 10px;
+  }
+
+  /* banner styles */
+  .banner{
+    margin: 5px;
+    flex-direction: column-reverse;
+  }
+  .banner-description, .banner img{
+    width: 100%;
+  }
+  
+  .banner img{
+    margin-bottom: 1.875em;
   }
 }
 
 /* responsive tablet */
 @media screen and (577px <=width <=960px) {
+
+
+  /* nav styles */
   nav {
     margin: 20px 100px;
   }
 
   nav,
-  nav ul {
+  nav ul , .banner{
     flex-direction: column;
   }
 
   .icon-and-text {
     margin-bottom: 25px;
+  }
+
+  /* banner styles */
+  .banner{
+    margin: 5px;
+    flex-direction: column-reverse;
+  }
+
+  .banner-description, .banner img{
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .banner img{
+    margin-bottom: 1.875em;
+    margin-top: 1.875em;
   }
 }

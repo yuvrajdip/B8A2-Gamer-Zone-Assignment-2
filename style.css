@@ -14,9 +14,42 @@ body {
 }
 
 /* common styles */
-.text-pink {
+.text-pink{
   color: #FF42A5;
 }
+
+.bg-pink{
+  background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+}
+
+.bg-light-blue{
+  background: #4EC5F7;
+}
+
+.btn{
+  padding: 20px 41px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: 600;
+  border-radius: 48px;
+  border: 0;
+  cursor: pointer;
+}
+
+.linear-gradient-font-color {
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+
+  /* Clip the background upto
+                the text  */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Set the color of the text
+                to transparent  */
+  color: transparent;
+}
+/* common styles ends */
+
 
 /* navbar styles starts */
 
@@ -93,6 +126,7 @@ nav ul input[type="text"]:focus {
 .fa-tiktok {
   right: 10px;
 }
+
 /* navbar ends */
 
 
@@ -100,7 +134,7 @@ nav ul input[type="text"]:focus {
 
 .banner {
   margin: 50px 100px;
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   align-items: center;
   background: #FFF;
@@ -108,6 +142,10 @@ nav ul input[type="text"]:focus {
 
 .banner-description {
   width: 50%;
+}
+
+.banner-description > *{
+  justify-self: flex-start;
 }
 
 .banner img {
@@ -122,24 +160,32 @@ nav ul input[type="text"]:focus {
 .banner-title {
   font-weight: 800;
   font-size: 95px;
-  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-
-  /* Clip the background upto
-                the text  */
-  -webkit-background-clip: text;
-  background-clip: text;
-  /* Set the color of the text
-                to transparent  */
-  color: transparent;
   margin-bottom: 24px;
 }
 
-.banner-description p{
+.banner-description p {
   margin-bottom: 17px;
 }
+
+.button-container{
+  margin-top: 25px;
+}
+
 /* banner ends */
 
+/**! main starts ****/
 
+/* online games */
+.online-games {
+  margin: 50px 100px;
+  text-align: center;
+}
+
+.online-games-title {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
 
 
 
@@ -150,14 +196,15 @@ nav ul input[type="text"]:focus {
 /* responsive */
 /* for mobile */
 @media screen and (width<=576px) {
-  
+
   /* nav styles */
   nav {
     margin: 20px 100px;
   }
-  
+
   nav,
-  nav ul , .banner{
+  nav ul,
+  .banner {
     flex-direction: column;
   }
 
@@ -170,18 +217,27 @@ nav ul input[type="text"]:focus {
   }
 
   /* banner styles */
-  .banner{
+  .banner {
     margin: 5px;
     flex-direction: column-reverse;
   }
-  .banner-description, .banner img{
+
+  .banner-description,
+  .banner img {
     width: 100%;
+    padding: 9px;
   }
-  
-  .banner img{
+
+  .banner img {
     margin-bottom: 1.875em;
   }
+
+  .btn{
+    margin-bottom: 15px;
+  }
 }
+
+
 
 /* responsive tablet */
 @media screen and (577px <=width <=960px) {
@@ -193,7 +249,8 @@ nav ul input[type="text"]:focus {
   }
 
   nav,
-  nav ul , .banner{
+  nav ul,
+  .banner {
     flex-direction: column;
   }
 
@@ -202,17 +259,18 @@ nav ul input[type="text"]:focus {
   }
 
   /* banner styles */
-  .banner{
-    margin: 5px;
+  .banner {
+    margin: 50px;
     flex-direction: column-reverse;
   }
 
-  .banner-description, .banner img{
+  .banner-description,
+  .banner img {
     width: 95%;
     margin: 0 auto;
   }
-  
-  .banner img{
+
+  .banner img {
     margin-bottom: 1.875em;
     margin-top: 1.875em;
   }

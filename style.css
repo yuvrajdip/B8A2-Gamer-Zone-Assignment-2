@@ -262,6 +262,7 @@ nav ul input[type="text"]:focus {
 
 .play-instantly-right-side{
   width: 50%;
+  height: 500px;
   position: relative;
 }
 
@@ -279,6 +280,34 @@ nav ul input[type="text"]:focus {
   width: 230px!important;
   height: 230px!important;
   top: 13.5rem;
+}
+/* play instantly sec ends */
+
+
+.buttons-grid-sec{
+  margin: 50px 100px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.button-grid{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid white;
+}
+
+.button-grid:hover{
+  color: rgb(252, 77, 106);
+  border: 1px solid rgb(252, 77, 106);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-grid-img{
+  width: 40px;
+  height: 40px;
 }
 
 
@@ -331,7 +360,8 @@ nav ul input[type="text"]:focus {
 
 
   /* online-games & play-instantly sec */
-  .online-games, .play-instantly{
+  .online-games, 
+  .play-instantly{
     margin: 20px;
   }
 
@@ -343,6 +373,13 @@ nav ul input[type="text"]:focus {
     width: 200px!important;
     height: 200px;
     top: 200px;
+  }
+
+
+  .buttons-grid-sec{
+    margin: 2px;
+    gap: 1px;
+    grid-template-columns: repeat(3,1fr);
   }
 }
 
@@ -392,11 +429,6 @@ nav ul input[type="text"]:focus {
     margin: 20px;
   }
 
-  
-  .play-instantly{
-    padding-bottom: 80px;
-  }
-
   .img-1{
     padding-left: 100px;
   }
@@ -405,5 +437,11 @@ nav ul input[type="text"]:focus {
     width: 180px!important;
     height: 160px!important;
     top: 200px;
+  }
+
+
+  .buttons-grid-sec{
+    margin: 25px;
+    padding: 0;
   }
 }

@@ -183,7 +183,7 @@ nav ul input[type="text"]:focus {
 
 .online-games-title {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 2.6rem;
   margin-bottom: 20px;
 }
 
@@ -245,6 +245,43 @@ nav ul input[type="text"]:focus {
 }
 
 
+
+/* play instantly  section */
+
+.play-instantly{
+  margin: 50px 100px;
+  /* padding-bottom: 400px; */
+  display: flex;
+  justify-content: center;
+}
+
+.play-instantly-left-side{
+  width: 50%;
+  text-align: center;
+}
+
+.play-instantly-right-side{
+  width: 50%;
+  position: relative;
+}
+
+.play-instantly-right-side img{
+  width: 95%;
+}
+
+.img-1{
+  position: absolute;
+  padding-left: 100px;
+}
+
+.img-2{
+  position: absolute;
+  width: 230px!important;
+  height: 230px!important;
+  top: 13.5rem;
+}
+
+
 /* responsive */
 /* for mobile */
 @media screen and (width<=576px) {
@@ -257,7 +294,8 @@ nav ul input[type="text"]:focus {
   nav,
   nav ul,
   .banner ,
-  .online-games-img-container{
+  .online-games-img-container,  
+  .play-instantly{
     flex-direction: column;
   }
 
@@ -276,7 +314,9 @@ nav ul input[type="text"]:focus {
   }
 
   .banner-description,
-  .banner img {
+  .banner img , 
+  .play-instantly-left-side,
+  .play-instantly-right-side{
     width: 100%;
     padding: 9px;
   }
@@ -289,14 +329,26 @@ nav ul input[type="text"]:focus {
     margin-bottom: 15px;
   }
 
-  .online-games{
+
+  /* online-games & play-instantly sec */
+  .online-games, .play-instantly{
     margin: 20px;
+  }
+
+  .img-1{
+    padding-left: 70px;
+  }
+
+  .img-2{
+    width: 200px!important;
+    height: 200px;
+    top: 200px;
   }
 }
 
 
 /* responsive tablet */
-@media screen and (577px <=width <=960px) {
+@media screen and (577px <=width <= 960px) {
 
 
   /* nav styles */
@@ -307,7 +359,8 @@ nav ul input[type="text"]:focus {
   nav,
   nav ul,
   .banner ,
-  .online-games-img-container{
+  .online-games-img-container
+  {
     flex-direction: column;
   }
 
@@ -330,5 +383,27 @@ nav ul input[type="text"]:focus {
   .banner img {
     margin-bottom: 1.875em;
     margin-top: 1.875em;
+  }
+
+  /* online-games & play-instantly sec */
+  .online-games,
+  .play-instantly,
+  .online-games-img-container{
+    margin: 20px;
+  }
+
+  
+  .play-instantly{
+    padding-bottom: 80px;
+  }
+
+  .img-1{
+    padding-left: 100px;
+  }
+
+  .img-2{
+    width: 180px!important;
+    height: 160px!important;
+    top: 200px;
   }
 }

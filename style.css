@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Work Sans', sans-serif;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -14,19 +15,19 @@ body {
 }
 
 /* common styles */
-.text-pink{
+.text-pink {
   color: #FF42A5;
 }
 
-.bg-pink{
+.bg-pink {
   background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
 }
 
-.bg-light-blue{
+.bg-light-blue {
   background: #4EC5F7;
 }
 
-.btn{
+.btn {
   padding: 20px 41px;
   text-transform: uppercase;
   font-size: 20px;
@@ -48,6 +49,7 @@ body {
                 to transparent  */
   color: transparent;
 }
+
 /* common styles ends */
 
 
@@ -67,6 +69,7 @@ nav {
 
 .icon-and-text {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
@@ -144,7 +147,7 @@ nav ul input[type="text"]:focus {
   width: 50%;
 }
 
-.banner-description > *{
+.banner-description>* {
   justify-self: flex-start;
 }
 
@@ -167,7 +170,7 @@ nav ul input[type="text"]:focus {
   margin-bottom: 17px;
 }
 
-.button-container{
+.button-container {
   margin-top: 25px;
 }
 
@@ -187,23 +190,23 @@ nav ul input[type="text"]:focus {
   margin-bottom: 20px;
 }
 
-.online-games-description{
+.online-games-description {
   margin-bottom: 24px;
   font-size: 20px;
   font-weight: 500;
 }
 
-.online-games-img-container{
+.online-games-img-container {
   display: flex;
   justify-content: space-evenly;
   gap: 1.5rem;
 }
 
-.online-games-img-container .img-box{
+.online-games-img-container .img-box {
   width: 100%;
 }
 
-.online-games-img-container .img-box img{
+.online-games-img-container .img-box img {
   width: 100%;
 }
 
@@ -211,7 +214,7 @@ nav ul input[type="text"]:focus {
   position: relative;
 }
 
-.overlay-image{
+.overlay-image {
   opacity: 1;
   display: block;
   width: 100%;
@@ -248,68 +251,105 @@ nav ul input[type="text"]:focus {
 
 /* play instantly  section */
 
-.play-instantly{
+.play-instantly {
   margin: 50px 100px;
   /* padding-bottom: 400px; */
   display: flex;
   justify-content: center;
 }
 
-.play-instantly-left-side{
+.play-instantly-left-side {
   width: 50%;
   text-align: center;
 }
 
-.play-instantly-right-side{
+.play-instantly-right-side {
   width: 50%;
   height: 500px;
   position: relative;
 }
 
-.play-instantly-right-side img{
+.play-instantly-right-side img {
   width: 95%;
 }
 
-.img-1{
+.img-1 {
   position: absolute;
   padding-left: 100px;
 }
 
-.img-2{
+.img-2 {
   position: absolute;
-  width: 230px!important;
-  height: 230px!important;
+  width: 230px !important;
+  height: 230px !important;
   top: 13.5rem;
 }
+
 /* play instantly sec ends */
 
 
-.buttons-grid-sec{
+/* button grid section starts */
+.buttons-grid-sec {
   margin: 50px 100px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
 
-.button-grid{
+.button-grid {
   display: flex;
   align-items: center;
   gap: 1rem;
   border: 1px solid white;
 }
 
-.button-grid:hover{
+.button-grid:hover {
   color: rgb(252, 77, 106);
   border: 1px solid rgb(252, 77, 106);
   border-radius: 20px;
   cursor: pointer;
 }
 
-.btn-grid-img{
+.btn-grid-img {
   width: 40px;
   height: 40px;
 }
 
+/* button grid section ends */
+
+
+/* footer section */
+footer {
+  background: #0B0223;
+  display: flex;
+  width: auto;
+  height: 500px;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+
+
+.footer-2nd-part ,
+.footer-3rd-part,
+.footer-4rth-part{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.footer-3rd-part{
+  grid-template-columns: repeat(5, 1fr);
+}
+.footer-4rth-part{
+  grid-template-columns: repeat(4,1fr);
+}
 
 /* responsive */
 /* for mobile */
@@ -322,9 +362,9 @@ nav ul input[type="text"]:focus {
 
   nav,
   nav ul,
-  .banner ,
-  .online-games-img-container,  
-  .play-instantly{
+  .banner,
+  .online-games-img-container,
+  .play-instantly {
     flex-direction: column;
   }
 
@@ -343,9 +383,9 @@ nav ul input[type="text"]:focus {
   }
 
   .banner-description,
-  .banner img , 
+  .banner img,
   .play-instantly-left-side,
-  .play-instantly-right-side{
+  .play-instantly-right-side {
     width: 100%;
     padding: 9px;
   }
@@ -354,38 +394,57 @@ nav ul input[type="text"]:focus {
     margin-bottom: 1.875em;
   }
 
-  .btn{
+  .btn {
     margin-bottom: 15px;
   }
 
 
   /* online-games & play-instantly sec */
-  .online-games, 
-  .play-instantly{
+  .online-games,
+  .play-instantly {
     margin: 20px;
   }
 
-  .img-1{
+  .img-1 {
     padding-left: 70px;
   }
 
-  .img-2{
-    width: 200px!important;
+  .img-2 {
+    width: 200px !important;
     height: 200px;
     top: 200px;
   }
 
-
-  .buttons-grid-sec{
+  /* buttons grid */
+  .buttons-grid-sec {
     margin: 2px;
-    gap: 1px;
+    row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+  /* footer styles */
+  footer{
+    height: auto;
+  }
+
+  .footer-container>.icon-and-text{
+    margin-top: 20px;
+  }
+
+  .footer-2nd-part, .footer-3rd-part{
     grid-template-columns: repeat(3,1fr);
+  }
+
+  .footer-4rth-part{
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 1.5rem;
   }
 }
 
 
 /* responsive tablet */
-@media screen and (577px <=width <= 960px) {
+@media screen and (577px <=width <=960px) {
 
 
   /* nav styles */
@@ -395,9 +454,8 @@ nav ul input[type="text"]:focus {
 
   nav,
   nav ul,
-  .banner ,
-  .online-games-img-container
-  {
+  .banner,
+  .online-games-img-container {
     flex-direction: column;
   }
 
@@ -425,23 +483,35 @@ nav ul input[type="text"]:focus {
   /* online-games & play-instantly sec */
   .online-games,
   .play-instantly,
-  .online-games-img-container{
+  .online-games-img-container {
     margin: 20px;
   }
 
-  .img-1{
+  .img-1 {
     padding-left: 100px;
   }
 
-  .img-2{
-    width: 180px!important;
-    height: 160px!important;
+  .img-2 {
+    width: 180px !important;
+    height: 160px !important;
     top: 200px;
   }
 
 
-  .buttons-grid-sec{
+  .buttons-grid-sec {
     margin: 25px;
     padding: 0;
+  }
+
+  .footer-container{
+    width: 100%;
+  }
+
+  .footer-2nd-part, .footer-3rd-part{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .footer-4rth-part{
+    grid-template-columns: repeat(2,1fr);
   }
 }

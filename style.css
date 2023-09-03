@@ -293,9 +293,10 @@ nav ul input[type="text"]:focus {
 /* button grid section starts */
 .buttons-grid-sec {
   margin: 50px 100px;
+  padding:4%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  gap: 1rem;
 }
 
 .button-grid {

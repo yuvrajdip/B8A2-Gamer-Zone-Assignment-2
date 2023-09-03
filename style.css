@@ -197,8 +197,10 @@ nav ul input[type="text"]:focus {
 }
 
 .online-games-img-container {
-  display: flex;
-  justify-content: space-evenly;
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
   gap: 1.5rem;
 }
 
@@ -363,9 +365,12 @@ footer {
   nav,
   nav ul,
   .banner,
-  .online-games-img-container,
   .play-instantly {
     flex-direction: column;
+  }
+
+  .online-games-img-container{
+    grid-template-columns: repeat(1,1fr);
   }
 
   .icon-and-text {
@@ -454,9 +459,12 @@ footer {
 
   nav,
   nav ul,
-  .banner,
-  .online-games-img-container {
+  .banner{
     flex-direction: column;
+  }
+
+  .online-games-img-container {
+    grid-template-columns: repeat(2,1fr);
   }
 
   .icon-and-text {

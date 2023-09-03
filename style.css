@@ -369,8 +369,16 @@ footer {
     flex-direction: column;
   }
 
+  .play-instantly{
+    gap: 90px;
+  }
+
   .online-games-img-container{
     grid-template-columns: repeat(1,1fr);
+  }
+
+  .online-games-title{
+    text-align: left;
   }
 
   .icon-and-text {
@@ -397,7 +405,7 @@ footer {
   .play-instantly-right-side {
     width: 100%;
     padding: 9px;
-
+    height: 300px;
   }
 
   .banner-description{

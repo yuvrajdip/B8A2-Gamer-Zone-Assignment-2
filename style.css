@@ -420,13 +420,13 @@ footer {
   }
 
   .img-1 {
-    padding-left: 70px;
+    padding-left: 65px;
   }
 
   .img-2 {
-    width: 200px !important;
-    height: 200px;
-    top: 200px;
+    width: 150px !important;
+    height: 120px!important;
+    top: 80px;
   }
 
   /* buttons grid */

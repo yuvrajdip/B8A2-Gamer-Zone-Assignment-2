@@ -380,7 +380,7 @@ footer {
   }
 
   .online-games-title{
-    text-align: left;
+    text-align: center!important;
   }
 
   .icon-and-text {
@@ -426,7 +426,13 @@ footer {
   /* online-games & play-instantly sec */
   .online-games,
   .play-instantly {
-    margin: 20px;
+    /* margin-top: 100px!important; */
+    text-align: justify;
+    margin:200px 30px 0px 30px !important;
+  }
+
+  .play-instantly{
+    margin-top: 50px!important;
   }
 
   .img-1 {
